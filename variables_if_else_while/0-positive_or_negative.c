@@ -5,7 +5,6 @@
 
 /**
    * main- Short description, single line
-    * @n: Description of parameter x
     *
      * Description: Longer description of the function)?
       *section header: Section description
