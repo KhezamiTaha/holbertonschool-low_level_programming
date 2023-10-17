@@ -14,9 +14,7 @@
 
 int main(void)
 {
-/**
- * main descriptions
- */
+
 	int n;
 
 	srand(time(0));
