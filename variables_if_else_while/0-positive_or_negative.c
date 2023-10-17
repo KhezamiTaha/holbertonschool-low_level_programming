@@ -2,13 +2,13 @@
 #include <stdio.h>
 #include <time.h>
 /* more headers goes there */
- 
+
 /**
    * main- Short description, single line
-    * @parameterx: Description of parameter x
-    (* a blank line
+    * @i: Description of parameter x
+    * 
      * Description: Longer description of the function)?
-     (* section header: Section description)*
+      *section header: Section description
       * Return: Description of the returned value
 */
 
