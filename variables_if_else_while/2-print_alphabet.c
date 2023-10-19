@@ -1,12 +1,14 @@
 #include <stdio.h>
-
-int main (void)
+/**
+*main - description
+*/
+int main(void)
 {
 	int n;
+
 	for (n = 'a'; n <= 'z'; n++)
 	{
 		putchar(n);
 	}
-	return(0);
+	return (0);
 }
- 
