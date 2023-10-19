@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
-*main - description
+*main - main des
+*
+*Return: des return
 */
 int main(void)
 {
