@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - main des
+*main - main desc
 *
 *Return: des return
 */
