@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
-*main - des goes here
-*
-*Return: des goes here
-*/
+ *main - des goes here
+ *
+ *Return: des goes here
+ */
 int main(void)
 {
 	int n;
