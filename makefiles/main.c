@@ -8,5 +8,5 @@
 int main(void)
 {
 	print_school();
-	return (1);
+	return (1);	
 }
