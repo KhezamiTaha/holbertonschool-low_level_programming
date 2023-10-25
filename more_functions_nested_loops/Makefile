@@ -11,7 +11,7 @@ all: $(OBJ)
 	$(CC)  $(CFLAGS) $(OBJ) -o $(NAME)
 	./$(NAME)
 	$(RM) -rf $(OBJ)  $(NAME)
-	$(git)
+	
 
 
 
@@ -27,3 +27,5 @@ fclean:
 	$(RM) -rf *~ $(NAME)
 	$(RM) -rf $(OBJ)
 re: oclean all
+git:
+	$(git)
