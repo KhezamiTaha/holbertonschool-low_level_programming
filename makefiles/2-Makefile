@@ -10,4 +10,4 @@ school.o : school.c
 
 school : 
 	$(CC)  $(OBJ) -o  $(NAME)
-	touch school
+	
