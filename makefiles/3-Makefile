@@ -10,12 +10,12 @@ all: $(OBJ)
 .PHONY: clean oclean fclean re
 	
 clean:
-	$(RM) -rf *~ $(NAME)l
+	$(RM) -rf *~ $(NAME)
 
 oclean:
 	$(RM) -rf $(OBJ)
 
 fclean:
-	$(RM)-f *~ $(NAME)
-	$(RM) -f $(OBJ)
+	$(RM) -rf *~ $(NAME)
+	$(RM) -rf $(OBJ)
 re: oclean all
