@@ -17,5 +17,5 @@ oclean:
 
 fclean:
 	rm -f *~ $(NAME)
-	rm -f main.o school.o
+	rm -f $(OBJ)
 re: oclean all
