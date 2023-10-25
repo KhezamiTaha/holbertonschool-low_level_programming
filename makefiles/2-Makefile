@@ -4,6 +4,6 @@ OBJ = main.o school.o
 NAME = school 
 
 
-all : main.o school.o  
+all :  
 	$(CC)  $(OBJ) -o  $(NAME)
 	
