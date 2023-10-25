@@ -6,6 +6,8 @@ NAME = school
 all: $(OBJ)
 	$(CC)  $(OBJ) -o $(NAME)
 	
+	.PHONY: clean oclean fclean re
+	
 clean :
 	rm -f *~ school
 
