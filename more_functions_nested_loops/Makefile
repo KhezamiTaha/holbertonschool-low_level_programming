@@ -1,8 +1,8 @@
 
-Function_file = 2-mul.c
-Main_file = 2-main.c
-NAME = 2-mul
-Function_name =  int mul(int a, int b);
+Function_file = 3-print_numbers.c
+Main_file = 3-main.c
+NAME = 3-print_numbers
+Function_name =  void print_numbers(void);
 
 Header = main.h
 
@@ -17,13 +17,13 @@ SRC =    $(Main_file)  $(Function_file)
 OBJ = $(SRC:.c=.o)
 RM = rm
 git = git add * && git commit -m '$(NAME)' && git push
-CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89
+CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89 
 Final_header = \#include \"$(Header)\"
 
 
 
 all: $(OBJ)
-	$(CC)  $(CFLAGS) $(OBJ) -o  $(NAME)
+	$(CC)  $(CFLAGS) _putchar.c $(OBJ) -o  $(NAME)
 	./$(NAME)
 	$(RM) -rf $(OBJ)   $(NAME)
 	
