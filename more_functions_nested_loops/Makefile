@@ -49,11 +49,11 @@ bk:
 	touch $(SRC)
 	echo "$(Final_header)" >> "$(Function_file)"
 	echo      ""            >> "$(Function_file)"
-	echo  "/** "               >> "$(Function_file)"
-	echo  " *$(Function_file) - Algorithms function  "               >> "$(Function_file)"
+	echo  "/**"               >> "$(Function_file)"
+	echo  " *$(Function_file) - Algorithms function"               >> "$(Function_file)"
 	echo  " *@: integer"              >> "$(Function_file)"
 	echo  " *"            >> "$(Function_file)"
-	echo  " *Return: 1 or 0 "             >> "$(Function_file)"
+	echo  " *Return: 1 or 0"             >> "$(Function_file)"
 	echo  " */"            >> "$(Function_file)"
 	echo  "$(Function_name)"  >> "$(Header)"
 dels :

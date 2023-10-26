@@ -1,13 +1,13 @@
 #include "main.h"
 
-/** 
- *1-isdigit.c - Algorithms function  
- *@: integer
+/**
+ *isdigit- Algorithms function
+ *@c: integer
  *
- *Return: 1 or 0 
+ *Return: 1 or 0
  */
 
-int _isdigit (int c)
+int _isdigit(int c)
 {
 	if (c <= '9' && c >= '0')
 		return (1);
