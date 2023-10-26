@@ -2,7 +2,7 @@
 
 Function_file = 1-isdigit.c
 Main_file = 1-main.c
-NAME = 1-isdigit
+
 Function_name =  int _isdigit(int c);
 Header = main.h
 
@@ -10,6 +10,8 @@ Header = main.h
 
 
 CC = gcc
+NAME = echo $(Function_file) | tr -d '.c'
+string= echo $(Function_file) | tr -d '1' | tr -d '.c' |tr '-' '_'
 SRC =    $(Main_file)  $(Function_file)
 OBJ = $(SRC:.c=.o)
 RM = rm
@@ -43,14 +45,15 @@ re: oclean dels all
 git:
 	$(git)
 
-
+echo:
+	echo $(string)
 
 bk:
 	touch $(SRC)
 	echo "$(Final_header)" >> "$(Function_file)"
 	echo      ""            >> "$(Function_file)"
 	echo  "/**"               >> "$(Function_file)"
-	echo  " *$(Function_file) - Algorithms function"               >> "$(Function_file)"
+	echo  " *$(string) - Algorithms function"               >> "$(Function_file)"
 	echo  " *@: integer"              >> "$(Function_file)"
 	echo  " *"            >> "$(Function_file)"
 	echo  " *Return: 1 or 0"             >> "$(Function_file)"

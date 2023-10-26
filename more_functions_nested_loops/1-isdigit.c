@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *isdigit- Algorithms function
+ * _isdigit - Algorithms function
  *@c: integer
  *
  *Return: 1 or 0
