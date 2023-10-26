@@ -1,17 +1,18 @@
 
+Function_file = 2-mul.c
+Main_file = 2-main.c
+NAME = 2-mul
+Function_name =  int mul(int a, int b);
 
-Function_file = 1-isdigit.c
-Main_file = 1-main.c
-
-Function_name =  int _isdigit(int c);
 Header = main.h
 
 
 
 
+
+
 CC = gcc
-NAME = echo $(Function_file) | tr -d '.c'
-string= echo $(Function_file) | tr -d '1' | tr -d '.c' |tr '-' '_'
+Function_file_final =   '$(Function_file)' | tr -d '0123456789' | tr -d '.c' |tr '-' '_' 
 SRC =    $(Main_file)  $(Function_file)
 OBJ = $(SRC:.c=.o)
 RM = rm
@@ -22,42 +23,49 @@ Final_header = \#include \"$(Header)\"
 
 
 all: $(OBJ)
-	$(CC)  $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CC)  $(CFLAGS) $(OBJ) -o  $(NAME)
 	./$(NAME)
-	$(RM) -rf $(OBJ)  $(NAME)
+	$(RM) -rf $(OBJ)   $(NAME)
 	
 
 
 
-.PHONY: clean oclean fclean re bk dels echo
+.PHONY: clean oclean fclean re bk  echo
 
 clean:
-	$(RM) -rf *~ $(NAME)
+	$(RM) -rf *~  $(NAME)
 
 oclean:
 	$(RM) -rf $(OBJ)
 
 fclean:
-	$(RM) -rf *~ $(NAME)
+	$(RM) -rf *~  $(NAME)
 	$(RM) -rf $(OBJ)
-re: oclean dels all
+	rm $(SRC)
+re: oclean  all
 
 git:
 	$(git)
 
 echo:
-	echo $(string)
+	
+	echo  $(NAME)
 
 bk:
-	touch $(SRC)
+	touch $(SRC) 
 	echo "$(Final_header)" >> "$(Function_file)"
 	echo      ""            >> "$(Function_file)"
 	echo  "/**"               >> "$(Function_file)"
-	echo  " *$(string) - Algorithms function"               >> "$(Function_file)"
+	echo    " *"            >> "$(Function_file)"
+	echo     $(Function_file_final)            >> "$(Function_file)"
+	echo    " - Algorithms function"            >> "$(Function_file)"
 	echo  " *@: integer"              >> "$(Function_file)"
 	echo  " *"            >> "$(Function_file)"
 	echo  " *Return: 1 or 0"             >> "$(Function_file)"
 	echo  " */"            >> "$(Function_file)"
 	echo  "$(Function_name)"  >> "$(Header)"
-dels :
-	rm $(SRC)
+	echo      ""            >> "$(Function_file)"
+	echo      ""            >> "$(Function_file)"
+	echo      ""            >> "$(Function_file)"
+	echo  "/*   To-Do :  Variables Description*/"   >> "$(Function_file)"
+	
