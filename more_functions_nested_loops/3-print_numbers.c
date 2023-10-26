@@ -2,7 +2,7 @@
 
 /**
  *print_numbers - Algorithms function
- *@i: integer
+ *
  *
  *Return: 1 or 0
  */
