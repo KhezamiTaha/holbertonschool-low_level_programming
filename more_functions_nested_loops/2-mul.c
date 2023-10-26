@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *_mul - Algorithms function
- *@: integer
- *
+ *mul - Algorithms function
+ *@a: integer
+ *@b: integer
  *Return: 1 or 0
  */
 int mul(int a, int b)
