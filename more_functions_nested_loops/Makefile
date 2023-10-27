@@ -1,8 +1,8 @@
 
-Function_file = 4-print_most_numbers.c
-Main_file = 4-main.c
-NAME = 4-print_most_numbers
-Function_name =  void print_numbers(void);
+Function_file = 5-more_numbers.c
+Main_file = 5-main.c
+NAME = 5-more_numbers
+Function_name =  void more_numbers(void);
 
 Header = main.h
 
