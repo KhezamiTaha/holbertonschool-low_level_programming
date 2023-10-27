@@ -12,7 +12,7 @@ Header = main.h
 
 
 CC = gcc
-Function_file_final =   '$(Function_file)' | tr -d '0123456789' | tr -d '.c' |tr '-' '_' 
+Function_file_final =   '$(Function_file)' | tr -d '0123456789' | tr -d '.c-'  
 SRC =    $(Main_file)  $(Function_file)
 OBJ = $(SRC:.c=.o)
 RM = rm

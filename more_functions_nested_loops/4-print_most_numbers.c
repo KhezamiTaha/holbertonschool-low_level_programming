@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_print_most_numbers - Algorithms function
+ *print_most_numbers - Algorithms function
  *@: integer
  *
  *Return: 1 or 0
