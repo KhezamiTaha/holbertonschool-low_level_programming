@@ -1,8 +1,8 @@
 
-Function_file = 7-print_diagonal.c
-Main_file = 7-main.c
-NAME = 7-print_diagonal
-Function_name =  void print_diagonal(int n);
+Function_file = 8-print_square.c
+Main_file = 8-main.c
+NAME = 8-print_square
+Function_name =  void print_diagonal(int size);
 
 Header = main.h
 
@@ -29,7 +29,7 @@ all: $(OBJ)
 
 
 
-.PHONY: clean oclean fclean re bk  echo
+.PHONY: clean oclean fclean re brk  echo
 
 clean:
 	$(RM) -rf *~  $(NAME)
@@ -50,7 +50,7 @@ echo:
 	
 	echo  $(NAME)
 
-bk:
+brk:
 	touch $(SRC) 
 	echo "$(Final_header)" >> "$(Function_file)"
 	echo      ""            >> "$(Function_file)"
@@ -66,5 +66,7 @@ bk:
 	echo      ""            >> "$(Function_file)"
 	echo      ""            >> "$(Function_file)"
 	echo      ""            >> "$(Function_file)"
-	echo  "/*   To-Do :  Variables Description  "   >> "$(Function_file)"
-	echo  "              Formt document       */"   >> "$(Function_file)"
+	echo  "/**"   >> "$(Function_file)"
+	echo  " * To-Do :  Variables Description"   >> "$(Function_file)"
+	echo  " *          Formt document"   >> "$(Function_file)"
+	echo  " */ "   >> "$(Function_file)"
