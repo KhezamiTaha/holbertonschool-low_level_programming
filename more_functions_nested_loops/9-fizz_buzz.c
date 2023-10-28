@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- *fizz_buzz - Algorithms function
+ *main - Algorithms function
  *@: integer
  *
  *Return: 1 or 0
  */
-void fizz_buzz(void)
+int main(void)
 {
 	int counter;
 	
@@ -22,7 +22,7 @@ void fizz_buzz(void)
 		printf("%d ", counter);
 	}
 	printf("\n");
-
+	return (0);
 }
 
 /**
