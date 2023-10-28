@@ -12,15 +12,14 @@ int main(void)
 
 	for (counter = 1; counter <= 100; counter++)
 	{
-		if (counter <= 100)
-		{
-			printf("Buzz");
-		}
 		if (counter % 15 == 0)
 			printf("FizzBuzz ");
 		else if (counter % 5 == 0)
 		{
-
+			if (counter == 100)
+			{
+				printf("Buzz");
+			}
 			printf("Buzz ");
 		}
 
