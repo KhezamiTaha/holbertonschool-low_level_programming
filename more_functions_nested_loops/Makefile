@@ -1,8 +1,8 @@
 
-Function_file = 9-fizz_buzz.c
-Main_file = 9-main.c
-NAME = 9-fizz_buzz
-Function_name =  void fizz_buzz(void);
+Function_file = 10-print_triangle.c
+Main_file = 10-main.c
+NAME = 10-print_triangle
+Function_name =  void print_triangle(int size);
 
 Header = main.h
 
@@ -23,6 +23,7 @@ Final_header = \#include \"$(Header)\"
 
 all: $(OBJ)
 	$(CC)  $(CFLAGS) _putchar.c $(OBJ) -o  $(NAME)
+	betty $(Function_file)
 	./$(NAME)
 	$(RM) -rf $(OBJ)   $(NAME)
 	
