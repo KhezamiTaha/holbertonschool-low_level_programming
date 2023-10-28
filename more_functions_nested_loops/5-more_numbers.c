@@ -15,7 +15,7 @@ void more_numbers(void)
 
 	for (r = 0; r <= 9; r++)
 	{
-		for (i = 0 ; i <= 14; i++)
+		for (i = 0; i <= 14; i++)
 		{
 			first_digit = i % 10;
 			second_digit = i / 10;
@@ -23,12 +23,11 @@ void more_numbers(void)
 			{
 				_putchar('0' + second_digit);
 			}
-				_putchar(first_digit + '0');
-			
+			_putchar(first_digit + '0');
 		}
-		
-				_putchar(10);
+
+		_putchar(10);
 	}
 }
 
-	/*   To-Do :  Variables Description*/
+/*   To-Do :  Variables Description*/
