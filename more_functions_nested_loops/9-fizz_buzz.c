@@ -23,7 +23,6 @@ int main(void)
 			printf("Buzz ");
 		}
 
-		printf("Buzz ");
 		else if (counter % 3 == 0)
 			printf("Fizz ");
 		else printf("%d ", counter);
