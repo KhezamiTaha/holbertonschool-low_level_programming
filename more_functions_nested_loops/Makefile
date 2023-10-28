@@ -1,8 +1,8 @@
 
-Function_file = 8-print_square.c
-Main_file = 8-main.c
-NAME = 8-print_square
-Function_name =  void print_diagonal(int size);
+Function_file = 9-fizz_buzz.c
+Main_file = 9-main.c
+NAME = 9-fizz_buzz
+Function_name =  void fizz_buzz(void);
 
 Header = main.h
 
