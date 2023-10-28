@@ -19,9 +19,8 @@ void print_line(int c)
 		{
 			_putchar('_');
 		}
-	}
-	if (c > 0)
 		_putchar(10);
+	}
 }
 
 /*   To-Do :  Variables Description*/

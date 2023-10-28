@@ -1,8 +1,8 @@
 
-Function_file = 6-print_line.c
-Main_file = 6-main.c
-NAME = 6-print_line
-Function_name =  void print_line(int n);
+Function_file = 7-print_diagonal.c
+Main_file = 7-main.c
+NAME = 7-print_diagonal
+Function_name =  void print_diagonal(int n);
 
 Header = main.h
 
