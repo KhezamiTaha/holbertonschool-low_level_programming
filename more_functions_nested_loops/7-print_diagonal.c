@@ -2,7 +2,7 @@
 
 /**
  *print_diagonal - Algorithms function
- *@c: integer
+ *@n: integer
  *
  *Return: 1 or 0
  */
@@ -26,5 +26,7 @@ void print_diagonal(int n)
 		_putchar(10);
 }
 
-/*   To-Do :  Variables Description
-			  Formt document       */
+/**
+ * To-Do :  Variables Description
+ *         Formt document      
+ */
