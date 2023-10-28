@@ -8,23 +8,23 @@
  */
 void print_diagonal(int n)
 {
-    int i, space;
+	int i, space;
 
-    if (n > 0)
-    {
-        for (i = 1; i <= n; i++)
-        {
-            for (space = 1; space <= i - 1; space++)
-            {
-                _putchar(' ');
-            }
-            _putchar(92);
-            _putchar(10);
-        }
-    }
-    else
-        _putchar(10);
+	if (n > 0)
+	{
+		for (i = 1; i <= n; i++)
+		{
+			for (space = 1; space <= i - 1; space++)
+			{
+				_putchar(' ');
+			}
+			_putchar(92);
+			_putchar(10);
+		}
+	}
+	else
+		_putchar(10);
 }
 
 /*   To-Do :  Variables Description
-              Formt document       */
+			  Formt document       */
