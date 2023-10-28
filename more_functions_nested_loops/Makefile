@@ -1,12 +1,15 @@
 
+#Function_file = 6-print_line.c
+#Main_file = 6-main.c
+#NAME = 6-print_line
+#Function_name =  void print_line(int n);
+
+Header = main.h
+
 Function_file = 5-more_numbers.c
 Main_file = 5-main.c
 NAME = 5-more_numbers
 Function_name =  void more_numbers(void);
-
-Header = main.h
-
-
 
 
 

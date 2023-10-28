@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- *
-more_numbers
- - Algorithms function
+ *more_numbers - Algorithms function
  *@: integer
  *
  *Return: 1 or 0
@@ -11,22 +9,24 @@ more_numbers
 void more_numbers(void)
 {
 	int i;
-	int j;
 	int r;
+	int first_digit;
+	int second_digit;
 
 	for (r = 0; r <= 9; r++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		for (i = 0 ; i <= 14; i++)
 		{
-			_putchar(i);
+			first_digit = i % 10;
+			second_digit = i / 10;
+			if (second_digit == 1)
+			{
+				_putchar('0' + second_digit);
+			}
+				_putchar(first_digit + '0');
+			
 		}
-		i = '1';
-		for (j = '0'; j <= '4'; j++)
-		{
-			_putchar(i);
-			_putchar(j);
 		
-		}
 				_putchar(10);
 	}
 }
