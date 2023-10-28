@@ -12,7 +12,7 @@ int main(void)
 
 	for (counter = 1; counter <= 100; counter++)
 	{
-		if (counter == 100)
+		if (counter <= 100)
 		{
 			printf("Buzz");
 		}
