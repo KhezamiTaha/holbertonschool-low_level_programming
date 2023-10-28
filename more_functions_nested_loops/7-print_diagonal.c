@@ -28,5 +28,5 @@ void print_diagonal(int n)
 
 /**
  * To-Do :  Variables Description
- *         Formt document      
+ *          Formt document
  */
