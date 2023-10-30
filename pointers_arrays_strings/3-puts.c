@@ -9,11 +9,11 @@
 void _puts(char *str)
 {
 	int i;
-	int l, ll;
+	int l;
 
-	l = _strlen("I do not fear computers. ");
-	ll = _strlen("I fear the lack of them - Isaac Asimov");
-	for (i = 0; i < (l + ll); i++)
+	l = _strlen(str);
+
+	for (i = 0; i < l; i++)
 	{
 		_putchar(*(str + i));
 	}
