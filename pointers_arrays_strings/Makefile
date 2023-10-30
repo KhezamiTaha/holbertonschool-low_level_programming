@@ -1,8 +1,8 @@
 
-Function_file = 6-puts2.c
-Main_file = 6-main.c
-NAME = 6-puts2
-Function_name =  void puts2(char *str);
+Function_file = 7-puts_half.c
+Main_file = 7-main.c
+NAME = 7-puts_half
+Function_name =  void puts_half(char *str);
 
 Header = main.h
 
