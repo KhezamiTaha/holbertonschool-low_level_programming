@@ -1,8 +1,8 @@
 
-Function_file = 3-puts.c
-Main_file = 3-main.c
-NAME = 3-puts
-Function_name =  void _puts(char *str);
+Function_file = 4-print_rev.c
+Main_file = 4-main.c
+NAME = 4-print_rev
+Function_name =  void print_rev(char *s);
 
 Header = main.h
 
