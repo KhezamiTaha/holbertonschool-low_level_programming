@@ -1,8 +1,8 @@
 
-Function_file = 0-reset_to_98.c
-Main_file = 0-main.c
-NAME = 0-98
-Function_name =  void reset_to_98(int *n);
+Function_file = 1-swap.c
+Main_file = 1-main.c
+NAME = 1-swap
+Function_name =  void swap_int(int *a, int *b);
 
 Header = main.h
 
