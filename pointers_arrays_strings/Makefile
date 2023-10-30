@@ -1,8 +1,8 @@
 
-Function_file = 5-rev_string.c
-Main_file = 5-main.c
-NAME = 5-rev_string
-Function_name =  void rev_string(char *s);
+Function_file = 6-puts2.c
+Main_file = 6-main.c
+NAME = 6-puts2
+Function_name =  void puts2(char *str);
 
 Header = main.h
 
