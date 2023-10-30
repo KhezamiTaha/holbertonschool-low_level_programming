@@ -1,8 +1,8 @@
 
-Function_file = 1-swap.c
-Main_file = 1-main.c
-NAME = 1-swap
-Function_name =  void swap_int(int *a, int *b);
+Function_file = 2-strlen.c
+Main_file = 2-main.c
+NAME = 2-strlen
+Function_name =  int _strlen(char *s);
 
 Header = main.h
 
