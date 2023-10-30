@@ -1,8 +1,8 @@
 
-Function_file = 2-strlen.c
-Main_file = 2-main.c
-NAME = 2-strlen
-Function_name =  int _strlen(char *s);
+Function_file = 3-puts.c
+Main_file = 3-main.c
+NAME = 3-puts
+Function_name =  void _puts(char *str);
 
 Header = main.h
 
@@ -22,7 +22,7 @@ Final_header = \#include \"$(Header)\"
 
 
 all: $(OBJ)
-	$(CC)  $(CFLAGS) _putchar.c $(OBJ) -o  $(NAME)
+	$(CC)  $(CFLAGS) _putchar.c 2-strlen.c $(OBJ) -o  $(NAME)
 	betty $(Function_file)
 	./$(NAME)
 	$(RM) -rf $(OBJ)   $(NAME)
