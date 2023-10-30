@@ -1,8 +1,8 @@
 
-Function_file = 7-puts_half.c
-Main_file = 7-main.c
-NAME = 7-puts_half
-Function_name =  void puts_half(char *str);
+Function_file = 8-print_array.c
+Main_file = 8-main.c
+NAME = 8-print_array
+Function_name =  void print_array(int *a, int n);
 
 Header = main.h
 
