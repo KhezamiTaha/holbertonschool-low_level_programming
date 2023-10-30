@@ -1,8 +1,8 @@
 
-Function_file = 8-print_array.c
-Main_file = 8-main.c
-NAME = 8-print_array
-Function_name =  void print_array(int *a, int n);
+Function_file = 9-strcpy.c
+Main_file = 9-main.c
+NAME = 9-strcpy
+Function_name =  char *_strcpy(char *dest, char *src);
 
 Header = main.h
 
