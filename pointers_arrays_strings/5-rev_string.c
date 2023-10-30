@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- *print_rev - Algorithms function
+ *rev_string - Algorithms function
  *@s: integer
  *
  *Return: 1 or 0
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i = 0;
 	int length = 0;
@@ -28,7 +28,7 @@ void print_rev(char *s)
 	}
 
 
-	_putchar(10);
+
 }
 
 /**

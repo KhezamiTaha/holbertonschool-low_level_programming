@@ -1,8 +1,8 @@
 
-Function_file = 4-print_rev.c
-Main_file = 4-main.c
-NAME = 4-print_rev
-Function_name =  void print_rev(char *s);
+Function_file = 5-rev_string.c
+Main_file = 5-main.c
+NAME = 5-rev_string
+Function_name =  void rev_string(char *s);
 
 Header = main.h
 
