@@ -16,7 +16,7 @@ SRC =    $(Main_file)  $(Function_file)
 OBJ = $(SRC:.c=.o)
 RM = rm
 git = git add * && git commit -m '$(NAME)' && git push
-CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89 
+CFLAGS = -Wall -Werror -Wextra -pedantic -std=gnu89  -fsanitize=signed-integer-overflow
 Final_header = \#include \"$(Header)\"
 
 

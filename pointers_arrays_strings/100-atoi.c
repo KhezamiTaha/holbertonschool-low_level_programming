@@ -10,7 +10,7 @@ int _atoi(char *s)
 	int i = 0, len = 0, nb = 0;
 	int plus = 0, minus = 0;
 
-	while (1)
+	while (*(s + i) != '\0')
 	{
 
 		if (isdigit(*(s + i)))
