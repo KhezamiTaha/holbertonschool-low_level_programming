@@ -16,7 +16,7 @@ int _atoi(char *s)
 		if (isdigit(*(s + i)))
 		{
 
-			if (minus > plus)
+			if (sign == -1)
 			{
 
 				len = len + 1;
