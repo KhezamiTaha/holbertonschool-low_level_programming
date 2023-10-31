@@ -1,7 +1,7 @@
 
-Function_file = 10-atoi.c
-Main_file = 10-main.c
-NAME = 10-atoi
+Function_file = 100-atoi.c
+Main_file = 100-main.c
+NAME = 100-atoi
 Function_name =  int _atoi(char *s);
 
 Header = main.h
