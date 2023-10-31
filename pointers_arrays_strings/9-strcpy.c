@@ -10,6 +10,9 @@
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
+	int j = '0';
+
+	printf("%d", j);
 
 	while (*(src + i) != '\0')
 	{
