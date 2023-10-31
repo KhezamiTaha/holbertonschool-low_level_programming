@@ -8,7 +8,7 @@
 int _atoi(char *s)
 {
 	int i = 0, len = 0, nb = 0;
-	int plus = 0, minus = 0;
+	int sign = 1;
 
 	while (*(s + i) != '\0')
 	{
@@ -31,9 +31,7 @@ int _atoi(char *s)
 			}
 		}
 		else if (*(s + i) == '-')
-			minus = minus + 1;
-		else if (*(s + i) == '+')
-			plus = plus + 1;
+			sign *= -1;
 		else if ((len != 0) && !(isdigit(*(s + i))))
 			break;
 		i++;
