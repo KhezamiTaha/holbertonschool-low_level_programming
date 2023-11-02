@@ -23,10 +23,11 @@ char *_strncat(char *dest, char *src, int n)
 		j++;
 		if (j == n - 1)
 			*(dest + i) = '\0';
+		if (*(src + j) == '\0')
+			break;
 	}
 	return (dest);
 }
-
 
 /**
  * To-Do :  Variables Description
