@@ -1,8 +1,8 @@
 
-Function_file = 2-strncpy.c
-Main_file = 2-strncpymain.c
-NAME = 2-strncpy
-Function_name =  char *_strncpy(char *dest, char *src, int n);
+Function_file = 3-strcmp.c
+Main_file = 3-strcmpmain.c
+NAME = 3-strcmp
+Function_name =  char *_strcmp(char *s1, char *s2);
 
 Header = main.h
 
@@ -59,7 +59,8 @@ brk:
 	echo    " *"            >> "$(Function_file)"
 	echo     $(Function_file_final)            >> "$(Function_file)"
 	echo    " - Algorithms function"            >> "$(Function_file)"
-	echo  " *@: integer"              >> "$(Function_file)"
+	echo  " *@: pointer"              >> "$(Function_file)"
+	echo  " *@: pointer"              >> "$(Function_file)"
 	echo  " *"            >> "$(Function_file)"
 	echo  " *Return: 1 or 0"             >> "$(Function_file)"
 	echo  " */"            >> "$(Function_file)"
