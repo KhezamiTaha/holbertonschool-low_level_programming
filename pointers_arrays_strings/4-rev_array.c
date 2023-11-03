@@ -18,7 +18,7 @@ void reverse_array(int *a, int n)
 		a[(n - 1) - i] = nb;
 	}
 }
-
+i am here and i want to go home
 /**
  * To-Do :  Variables Description
  *          Formt document

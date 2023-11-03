@@ -1,8 +1,8 @@
 
-Function_file = 4-rev_array.c
-Main_file = 4-rev_arraymain.c
-NAME = 4-rev_array
-Function_name =  void reverse_array(int *a, int n);
+Function_file =  5-string_toupper.c
+Main_file =  5-string_touppermain.c
+NAME = 5-string_toupper
+Function_name =  char *string_toupper(char *);
 
 Header = main.h
 
