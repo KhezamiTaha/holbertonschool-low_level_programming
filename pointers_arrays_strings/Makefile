@@ -1,8 +1,8 @@
 
-Function_file = 1-strncat.c
-Main_file = 1-strncatmain.c
-NAME = 1-strncat
-Function_name =  char *_strncat(char *dest, char *src, int n);
+Function_file = 2-strncpy.c
+Main_file = 2-strncpymain.c
+NAME = 2-strncpy
+Function_name =  char *_strncpy(char *dest, char *src, int n);
 
 Header = main.h
 
