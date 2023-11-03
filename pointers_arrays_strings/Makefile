@@ -1,8 +1,8 @@
 
-Function_file = 3-strcmp.c
-Main_file = 3-strcmpmain.c
-NAME = 3-strcmp
-Function_name =  char *_strcmp(char *s1, char *s2);
+Function_file = 4-rev_array.c
+Main_file = 4-rev_arraymain.c
+NAME = 4-rev_array
+Function_name =  void reverse_array(int *a, int n);
 
 Header = main.h
 
