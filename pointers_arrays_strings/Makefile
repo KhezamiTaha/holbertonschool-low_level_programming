@@ -1,8 +1,8 @@
 
-Function_file =  5-string_toupper.c
-Main_file =  5-string_touppermain.c
-NAME = 5-string_toupper
-Function_name =  char *string_toupper(char *);
+Function_file =  6-cap_string.c
+Main_file =  6-cap_stringmain.c
+NAME = 6-cap
+Function_name =  char *cap_string(char *);
 
 Header = main.h
 
