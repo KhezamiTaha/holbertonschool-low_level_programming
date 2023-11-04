@@ -1,8 +1,9 @@
 
-Function_file =  6-cap_string.c
-Main_file =  6-cap_stringmain.c
-NAME = 6-cap
-Function_name =  char *cap_string(char *);
+Function_file =  7-leet.c
+Main_file =  7-leetmain.c
+NAME = 7-1337
+Function_name =  char *leet(char *s);
+
 
 Header = main.h
 
