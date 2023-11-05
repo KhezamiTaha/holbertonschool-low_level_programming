@@ -1,8 +1,8 @@
 
-Function_file =  1-memcpy.c
-Main_file =  1-memcpymain.c
-NAME = 1-memcpy
-Function_name =  char *_memcpy(char *dest, char *src, unsigned int n);
+Function_file =  2-strchr.c
+Main_file =  2-strchrmain.c
+NAME = 2-strchr.c
+Function_name =  char *_strchr(char *s, char c);
 
 
 Header = main.h
