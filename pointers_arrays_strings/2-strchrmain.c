@@ -8,14 +8,15 @@
  */
 int main(void)
 {
-    char *s = "hello";
-    char *f;
+	char *s = "hello";
+	char *f;
 
-    f = _strchr(s, 'l');
+	f = _strchr(s, 'l');
 
-    if (f != NULL)
-    {
-        printf("%s\n", f);
-    }
-    return (0);
+	if (f != NULL)
+		printf("%s\n", f);
+	else
+		printf("nil\n");
+
+	return (0);
 }
