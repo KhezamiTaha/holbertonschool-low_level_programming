@@ -1,8 +1,8 @@
 
-Function_file =  7-leet.c
-Main_file =  7-leetmain.c
-NAME = 7-1337
-Function_name =  char *leet(char *s);
+Function_file =  0-memset.c
+Main_file =  0-memsetmain.c
+NAME = 0-memset
+Function_name =  char *_memset(char *s, char b, unsigned int n);
 
 
 Header = main.h
