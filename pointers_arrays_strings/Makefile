@@ -1,8 +1,8 @@
 
-Function_file =  0-memset.c
-Main_file =  0-memsetmain.c
-NAME = 0-memset
-Function_name =  char *_memset(char *s, char b, unsigned int n);
+Function_file =  1-memcpy.c
+Main_file =  1-memcpymain.c
+NAME = 1-memcpy
+Function_name =  char *_memcpy(char *dest, char *src, unsigned int n);
 
 
 Header = main.h
@@ -12,7 +12,7 @@ Header = main.h
 
 
 CC = gcc
-Function_file_final =   '$(Function_file)' | tr -d '0123456789' | tr -d '.c-'  
+Function_file_final =   '$(Function_file)' | tr -d '0123456789' | tr -d '.c' | tr '-' '_' 
 SRC =    $(Main_file)  $(Function_file)
 OBJ = $(SRC:.c=.o)
 RM = rm
