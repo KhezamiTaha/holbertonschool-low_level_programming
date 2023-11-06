@@ -30,8 +30,6 @@ char *_strstr(char *haystack, char *needle)
 			if (len == strlen(needle))
 				return (haystack + i);
 		}
-		if (len == strlen(needle))
-			return (haystack + i);
 	}
 	return ('\0');
 }
