@@ -1,8 +1,8 @@
 
-Function_file =   5-strstr.c
-Main_file =   5-strstrmain.c
-NAME =  5-strstr
-Function_name =  char *_strstr(char *haystack, char *needle);
+Function_file =   7-print_chessboard.c
+Main_file =   7-print_chessboardmain.c
+NAME =  7-print_chessboard
+Function_name =  void print_chessboard(char (*a)[8]);
 
 
 
