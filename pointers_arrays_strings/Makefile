@@ -1,8 +1,9 @@
 
-Function_file =  2-strchr.c
-Main_file =  2-strchrmain.c
-NAME = 2-strchr.c
-Function_name =  char *_strchr(char *s, char c);
+Function_file =   3-strspn.c
+Main_file =   3-strspnmain.c
+NAME =  3-strspn
+Function_name =  unsigned int _strspn(char *s, char *accept);
+
 
 
 Header = main.h
