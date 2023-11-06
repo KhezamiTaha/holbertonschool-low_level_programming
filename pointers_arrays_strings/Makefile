@@ -1,8 +1,8 @@
 
-Function_file =   3-strspn.c
-Main_file =   3-strspnmain.c
-NAME =  3-strspn
-Function_name =  unsigned int _strspn(char *s, char *accept);
+Function_file =   4-strpbrk.c
+Main_file =   4-strpbrkmain.c
+NAME =  4-strpbrk.c
+Function_name =  char *_strpbrk(char *s, char *accept);
 
 
 
