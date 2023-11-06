@@ -27,4 +27,4 @@ char *_strpbrk(char *s, char *accept)
 /**
  * To-Do :  Variables Description
  *          Formt document
- */ 
+ */
