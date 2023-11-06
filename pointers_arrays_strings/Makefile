@@ -1,8 +1,8 @@
 
-Function_file =   4-strpbrk.c
-Main_file =   4-strpbrkmain.c
-NAME =  4-strpbrk.c
-Function_name =  char *_strpbrk(char *s, char *accept);
+Function_file =   5-strstr.c
+Main_file =   5-strstrkmain.c
+NAME =  5-strstr
+Function_name =  char *_strstr(char *haystack, char *needle);
 
 
 
