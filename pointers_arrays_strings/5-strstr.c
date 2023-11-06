@@ -25,7 +25,6 @@ char *_strstr(char *haystack, char *needle)
 					ii++;
 				}
 			}
-			printf("%u\n", len);
 			if (len == strlen(needle))
 				return (haystack + i);
 		}
