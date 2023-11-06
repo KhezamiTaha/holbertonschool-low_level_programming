@@ -1,6 +1,6 @@
 
 Function_file =   5-strstr.c
-Main_file =   5-strstrkmain.c
+Main_file =   5-strstrmain.c
 NAME =  5-strstr
 Function_name =  char *_strstr(char *haystack, char *needle);
 
