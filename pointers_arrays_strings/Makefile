@@ -1,9 +1,8 @@
 
-Function_file =   7-print_chessboard.c
-Main_file =   7-print_chessboardmain.c
-NAME =  7-print_chessboard
-Function_name =  void print_chessboard(char (*a)[8]);
-
+Function_file =   8-print_diagsums.c
+Main_file =   8-print_diagsumsmain.c
+NAME =  8-print_diagsums.c
+Function_name =  void print_diagsums(int *a, int size);
 
 
 Header = main.h
