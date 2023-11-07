@@ -1,8 +1,8 @@
 
-Function_file =   1-print_rev_recursion.c
-Main_file =   1-print_rev_recursionmain.c
-NAME =  1-print_rev_recursion
-Function_name =  void _print_rev_recursion(char *s);
+Function_file =   3-factorial.c
+Main_file =   3-factorial.cmain.c
+NAME =  3-factorial
+Function_name =  int factorial(int n);
 
 
 Header = main.h
@@ -12,7 +12,7 @@ Header = main.h
 
 
 CC = gcc
-Function_file_final =   '$(Function_file)' | tr -d '0123456789' | tr -d '.c' | tr '-' '_' 
+Function_file_final =   '$(Function_file)' | tr -d '0123456789' | tr '-' '_' 
 SRC =    $(Main_file)  $(Function_file)
 OBJ = $(SRC:.c=.o)
 RM = rm
