@@ -1,8 +1,8 @@
 
-Function_file =   3-factorial.c
-Main_file =   3-factorial.cmain.c
-NAME =  3-factorial
-Function_name =  int factorial(int n);
+Function_file =   4-pow_recursion.c
+Main_file =   4-pow_recursionmain.c
+NAME =  4-pow_recursion
+Function_name =  int _pow_recursion(int x, int y);
 
 
 Header = main.h
