@@ -9,6 +9,6 @@
 int main(int argc, char* argv[])
 {	
 	(void) argc;
-	_puts(argv[0]);
+	puts(argv[0]);
 	return (0);
 }
