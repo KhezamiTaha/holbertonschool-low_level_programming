@@ -9,7 +9,7 @@
  */
 int sqrtt(int n, int s)
 {
-	if (s * s >= n)
+	if (s * s > n)
 		return (-1);
 	if (s * s == n)
 		return (s);

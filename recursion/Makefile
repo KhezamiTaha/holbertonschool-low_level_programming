@@ -1,8 +1,8 @@
 
-Function_file =   6-is_prime_number.c
-Main_file =   6-is_prime_numbermain.c
-NAME =  6-is_prime_number
-Function_name =  int is_prime_number(int n);
+Function_file =   5-sqrt_recursion.c
+Main_file =   5-sqrt_recursionnmain.c
+NAME =  5-sqrt_recursion
+Function_name =  int _sqrt_recursion(int n);
 
 
 Header = main.h
