@@ -16,16 +16,4 @@ int main(void)
     printf("%s", ptr);
     return (0);
 }
-for (j = 0; j < 8; j++)
-		{
-			
-			if (i == j)
-				sum1 = sum1 + a[i][j];
-			if ((i + j) == size - 1)
-				sum2 = sum2 + a[i][j];
-		}
 
-        int i, j;
-	int sum1, sum2;
-
-	sum1 = sum2 = 0;
