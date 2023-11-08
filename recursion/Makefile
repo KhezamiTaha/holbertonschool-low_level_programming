@@ -1,8 +1,8 @@
 
-Function_file =   4-pow_recursion.c
-Main_file =   4-pow_recursionmain.c
-NAME =  4-pow_recursion
-Function_name =  int _pow_recursion(int x, int y);
+Function_file =   6-is_prime_number.c
+Main_file =   6-is_prime_numbermain.c
+NAME =  6-is_prime_number
+Function_name =  int is_prime_number(int n);
 
 
 Header = main.h
