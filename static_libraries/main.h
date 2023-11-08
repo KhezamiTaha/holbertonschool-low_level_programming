@@ -1,5 +1,5 @@
 int _putchar(char c);
-int  _isupper(int  c);
+int _isupper(int c);
 int _isdigit(int c);
 void print_numbers(void);
 void print_most_numbers(void);
@@ -27,7 +27,6 @@ char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
 char *_strcat(char *dest, char *src);
 
-
 char *_strncat(char *dest, char *src, int n);
 char *_strncat(char *dest, char *src, int n);
 char *_strncat(char *dest, char *src, int n);
@@ -50,7 +49,6 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
-
 
 int _putchar(char);
 void print_alphabet(void);
