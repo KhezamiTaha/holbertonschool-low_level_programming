@@ -9,10 +9,10 @@
  */
 int sqrtt(int n, int s)
 {
-	if (n % s == 0)
-		return (0);
-	if (s > n/2)
-		return (1);
+	if (s * s >= n)
+		return (-1);
+	if (s * s == n)
+		return (s);
 	return (sqrtt(n, s + 1));
 }
 
@@ -25,7 +25,7 @@ int sqrtt(int n, int s)
  */
 int _sqrt_recursion(int n)
 {
-	if (n <= 1)
-		return (0);
-	return (sqrtt(n, 2));
+	if (n <= 0)
+		return (-1);
+	return (sqrtt(n, 0));
 }
