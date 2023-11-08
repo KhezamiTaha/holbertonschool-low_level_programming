@@ -1,6 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
-
 int _putchar(char c);
 int _isupper(int c);
 int _isdigit(int c);
@@ -13,9 +12,6 @@ void print_square(int size);
 void fizz_buzz(void);
 void print_triangle(int size);
 int mul(int a, int b);
-#include <stdio.h>
-#include <ctype.h>
-#include <string.h>
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
