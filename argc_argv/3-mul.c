@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	if (argc < 3)
-	{	printf("ُErro\n");
+	{	printf("ُError");
 		return (1);
 	}
 	else
