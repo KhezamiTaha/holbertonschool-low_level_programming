@@ -1,8 +1,8 @@
 
-Function_file =   0-create_array.c
-Main_file =   0-create_arraymsmain.c
-NAME =  0-create_array
-Function_name =  char *create_array(unsigned int size, char c);
+Function_file =   1-strdup.c
+Main_file =   1-strdupmain.c
+NAME =  1-strdup
+Function_name =  char *_strdup(char *str);
 
 
 Header = main.h
