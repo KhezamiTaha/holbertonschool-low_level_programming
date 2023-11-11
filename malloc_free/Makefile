@@ -1,8 +1,8 @@
 
-Function_file =   1-strdup.c
-Main_file =   1-strdupmain.c
-NAME =  1-strdup
-Function_name =  char *_strdup(char *str);
+Function_file =   2-str_concat.c
+Main_file =   2-str_concatmain.c
+NAME = 2-str_concat
+Function_name =  char *str_concat(char *s1, char *s2);
 
 
 Header = main.h
@@ -72,4 +72,4 @@ brk:
 	echo  "/**"   >> "$(Function_file)"
 	echo  " * To-Do :  Variables Description"   >> "$(Function_file)"
 	echo  " *          Formt document"   >> "$(Function_file)"
-	echo  " */ "   >> "$(Function_file)"
+	echo  " */"   >> "$(Function_file)"

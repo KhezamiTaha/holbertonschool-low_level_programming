@@ -10,7 +10,6 @@
 char *_strdup(char *str)
 {
 	char *pointer_to_new_string;
-	unsigned int i;
 
 	if (str == NULL)
 		return (NULL);
@@ -21,9 +20,7 @@ char *_strdup(char *str)
 		printf("Not enough memory!");
 		return (NULL);
 	}
-	for (i = 0; i < strlen(str); i++)
-		pointer_to_new_string[i] = str[i];
-	pointer_to_new_string[i] = '\0';
+	strcpy(pointer_to_new_string, str);
 	return (pointer_to_new_string);
 }
 
