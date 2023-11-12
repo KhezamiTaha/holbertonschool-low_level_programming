@@ -14,7 +14,6 @@ void print_grid(int **grid, int width, int height)
 {
     int w;
     int h;
-	
 
     h = 0;
     while (h < height)
@@ -32,13 +31,12 @@ void print_grid(int **grid, int width, int height)
 
 /**
  * main - check the code
- *  valgrind ./3-alloc_grid   int **alloc_grid(int width, int height); 
- * Return: Always 0. 3-alloc_grid.c
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
     int **grid;
-	int i;
 
     grid = alloc_grid(6, 4);
     if (grid == NULL)
@@ -50,8 +48,6 @@ int main(void)
     grid[0][3] = 98;
     grid[3][4] = 402;
     print_grid(grid, 6, 4);
-	for (i = 0; grid[i] != NULL; i++)
-		free(grid[i]);
-	free(grid);
+    free_grid(grid, 4);
     return (0);
 }

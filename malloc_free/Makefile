@@ -1,8 +1,8 @@
 
-Function_file =   3-alloc_grid.c
-Main_file =   3-alloc_gridmain.c
-NAME = 3-alloc_grid
-Function_name =  int **alloc_grid(int width, int height);
+Function_file =   4-free_grid.c
+Main_file =   4-free_gridmain.c
+NAME = 4-free_grid
+Function_name =  void free_grid(int **grid, int height);
 
 
 Header = main.h
@@ -23,7 +23,7 @@ Final_header = \#include \"$(Header)\"
 
 
 all: $(OBJ)
-	$(CC)  $(CFLAGS) _putchar.c  $(OBJ) -o  $(NAME)
+	$(CC)  $(CFLAGS) _putchar.c 3-alloc_grid.c  $(OBJ) -o  $(NAME)
 	betty $(Function_file)
 	./$(NAME)
 	$(RM) -rf $(OBJ)
@@ -31,7 +31,7 @@ all: $(OBJ)
 
 
 
-.PHONY: clean oclean fclean re brk  echo
+.PHONY: clean oclean fclean re brk  echo valgrind
 
 clean:
 	$(RM) -rf *~  $(NAME)
@@ -51,6 +51,9 @@ git:
 echo:
 	
 	echo  $(NAME)
+
+valgrind:
+	valgrind ./$(NAME)
 
 brk:
 	touch $(SRC) 
