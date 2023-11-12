@@ -1,38 +1,49 @@
 #include "main.h"
 
+
+
 /**
- *alloc_grid - Algorithms function
- *@width: pointer
- *@height: pointer
- *
- *Return: 1 or 0
- */
+* alloc_grid - returns a pointer to a
+*2 dimensional array of integers.
+*@width: width oàf array
+*@height: height of array
+*
+*Return: pointer to the array
+*/
+
 int **alloc_grid(int width, int height)
 {
 	int **array;
-	int i = 0, j = 0;
+	int i = 0, j;
 
-	if (width < 0 || height < 0 || width * height == 0)
+	if (width == 0 || height == 0)
 		return (NULL);
-	array = malloc(sizeof(int *) * height);
-	if (array == NULL)
+	array = (int **) malloc(sizeof(int *) * height);
+	if (array != NULL)
 	{
-		printf("Not enough memory!");
-		return (NULL);
-	}
-	for (i = 0; i < height; i++)
-		array[i] = malloc(sizeof(int) * width);
-	for (i = 0; i < height; i++)
-	{
-		for (j = 0; j < width; j++)
+		for (; i < height; i++)
 		{
-			array[i][j] = 0;
+			array[i] = (int *) malloc(sizeof(int) * width);
+			if (array[i] != NULL)
+			{
+				for (j = 0; j < width; j++)
+					array[i][j] = 0;
+			}
+			else
+			{
+				while (i >= 0)
+				{
+					free(array[i]);
+					i--;
+				}
+				free(array);
+				return (NULL);
+			}
 		}
+		return (array);
 	}
-	return (array);
+	else
+	{
+		return (NULL);
+	}
 }
-
-/**
- * To-Do :  Variables Description
- *          Formt document
- */
