@@ -1,8 +1,8 @@
 
-Function_file =   2-str_concat.c
-Main_file =   2-str_concatmain.c
-NAME = 2-str_concat
-Function_name =  char *str_concat(char *s1, char *s2);
+Function_file =   3-alloc_grid.c
+Main_file =   3-alloc_gridmain.c
+NAME = 3-alloc_grid
+Function_name =  int **alloc_grid(int width, int height);
 
 
 Header = main.h
@@ -26,7 +26,7 @@ all: $(OBJ)
 	$(CC)  $(CFLAGS) _putchar.c  $(OBJ) -o  $(NAME)
 	betty $(Function_file)
 	./$(NAME)
-	$(RM) -rf $(OBJ)   $(NAME)
+	$(RM) -rf $(OBJ)
 	
 
 
