@@ -12,18 +12,22 @@ _array_range.c
 int *array_range(int min, int max)
 {
 	int *ptr;
-	int i;
+	int i, a;
 
 	if (min > max)
 		return (NULL);
-	ptr = malloc((max - min + 1) * sizeof(*ptr) );
+	ptr = malloc((max - min + 1) * sizeof(*ptr));
 	if (ptr == NULL)
 	{
 		printf("Not enough memory!");
 		return (NULL);
 	}
-	for (i = min; i <= max; i++)
-		ptr[i] = i;
+	a = min;
+	for (i = 0; i < max - min + 1; i++)
+	{
+		ptr[i] = a;
+		a++;
+	}
 	return (ptr);
 }
 
