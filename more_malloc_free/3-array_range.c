@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- *
-_array_range.c
- - Algorithms function
- *@: pointer
- *@: pointer
+ *array_range - Algorithms function
+ *@min: pointer
+ *@max: pointer
  *
  *Return: 1 or 0
  */
