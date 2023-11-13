@@ -20,7 +20,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	pointer_to_new_string = malloc((strlen(s1) + n + 1) * sizeof(char));
 	if (pointer_to_new_string == NULL)
 	{
-		printf("Not enough memory!");
 		return (NULL);
 	}
 	pointer_to_new_string = strcat(pointer_to_new_string, s1);
