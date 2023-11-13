@@ -17,14 +17,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	if (n >= strlen(s2))
 		n = strlen(s2);
-	pointer_to_new_string = malloc((strlen(s1) + n + 2) * sizeof(char));
+	pointer_to_new_string = malloc((strlen(s1) + n + 1) * sizeof(char));
 	if (pointer_to_new_string == NULL)
 	{
 		printf("Not enough memory!");
 		return (NULL);
 	}
 	pointer_to_new_string = strcat(pointer_to_new_string, s1);
-	printf("%s\n", pointer_to_new_string);
 	pointer_to_new_string = strncat(pointer_to_new_string, s2, n);
 	return (pointer_to_new_string);
 }
