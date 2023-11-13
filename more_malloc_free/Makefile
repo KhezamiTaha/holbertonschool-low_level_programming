@@ -1,8 +1,8 @@
 
-Function_file =   1-string_nconcat.c
-Main_file =   1-string_nconcatmain.c
-NAME = 1-string_nconcat
-Function_name =  char *string_nconcat(char *s1, char *s2, unsigned int n);
+Function_file =   2-calloc.c
+Main_file =   2-callocmain.c
+NAME = 2-calloc
+Function_name =  void *_calloc(unsigned int nmemb, unsigned int size);
 
 
 Header = main.h
