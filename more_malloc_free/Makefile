@@ -1,8 +1,8 @@
 
-Function_file =   0-malloc_checked.c
-Main_file =   0-malloc_checkedmain.c
-NAME = 0-malloc_checked
-Function_name =  void *malloc_checked(unsigned int b);
+Function_file =   1-string_nconcat.c
+Main_file =   1-string_nconcatmain.c
+NAME = 1-string_nconcat
+Function_name =  char *string_nconcat(char *s1, char *s2, unsigned int n);
 
 
 Header = main.h
