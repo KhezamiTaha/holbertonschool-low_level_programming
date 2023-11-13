@@ -1,7 +1,7 @@
 
-Function_file =   2-calloc.c
-Main_file =   2-callocmain.c
-NAME = 2-calloc
+Function_file =   3-array_range.c
+Main_file =   3-array_rangemain.c
+NAME = 3-array_range.c
 Function_name =  void *_calloc(unsigned int nmemb, unsigned int size);
 
 
