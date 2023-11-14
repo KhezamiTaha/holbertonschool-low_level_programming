@@ -1,7 +1,7 @@
 
-Function_file =   1-pi.h
-Main_file =  2-main.c
-NAME = 2-main
+Function_file =   3-function_like_macro.h
+Main_file =  3-function_like_macromain.c
+NAME = 3-function_like_macro
 Function_name =  char *string_nconcat(char *s1, char *s2, unsigned int n);
 
 
