@@ -1,7 +1,7 @@
 
 Function_file =   1-pi.h
-Main_file =  1-piomain.c
-NAME = 1-pi
+Main_file =  2-main.c
+NAME = 2-main
 Function_name =  char *string_nconcat(char *s1, char *s2, unsigned int n);
 
 
