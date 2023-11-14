@@ -1,7 +1,7 @@
 
-Function_file =   3-function_like_macro.h
-Main_file =  3-function_like_macromain.c
-NAME = 3-function_like_macro
+Function_file =   4-sum.h
+Main_file =  4-summain.c
+NAME = 4-sum
 Function_name =  char *string_nconcat(char *s1, char *s2, unsigned int n);
 
 
