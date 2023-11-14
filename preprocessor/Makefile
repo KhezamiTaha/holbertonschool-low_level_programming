@@ -1,7 +1,7 @@
 
-Function_file =   0-object_like_macro.h
-Main_file =  0-object_like_macromain.c
-NAME = 0-object_like_macro
+Function_file =   1-pi.h
+Main_file =  1-piomain.c
+NAME = 1-pi
 Function_name =  char *string_nconcat(char *s1, char *s2, unsigned int n);
 
 
