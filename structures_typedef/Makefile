@@ -1,11 +1,11 @@
 
-Function_file =   dog.h
-Main_file =  dogomain.c
-NAME = dog
-Function_name =  yes
+Function_file =   1-init_dog.c
+Main_file =  1-init_dogmain.c
+NAME = 1-init_dog
+Function_name =  void init_dog(struct dog *d, char *name, float age, char *owner);
 
 
-Header = main.h
+Header = dog.h
 Directory = structures_typedef
 
 
@@ -15,7 +15,7 @@ Directory = structures_typedef
 
 CC = gcc
 Function_file_final =   '$(Function_file)' | tr -d '0123456789' | tr '-' '_' 
-SRC =    $(Main_file)  
+SRC =    $(Main_file)  $(Function_file)
 OBJ = $(SRC:.c=.o)
 RM = rm
 git = git add * && git commit -m '$(NAME)' && git push
