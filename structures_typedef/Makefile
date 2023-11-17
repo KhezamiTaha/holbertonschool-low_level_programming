@@ -1,8 +1,8 @@
 
-Function_file =   1-init_dog.c
-Main_file =  1-init_dogmain.c
-NAME = 1-init_dog
-Function_name =  void init_dog(struct dog *d, char *name, float age, char *owner);
+Function_file =   2-print_dog.c
+Main_file =  2-print_dogmain.c
+NAME = 2-print_dog
+Function_name =  void print_dog(struct dog *d);
 
 
 Header = dog.h
