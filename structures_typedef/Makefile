@@ -1,8 +1,8 @@
 
-Function_file =   4-new_dog.c
-Main_file =  4-new_dogmain.c
-NAME = 4-new_dog
-Function_name =  dog_t *new_dog(char *name, float age, char *owner);
+Function_file =   5-free_dog.c
+Main_file =  5-free_dogmain.c
+NAME = 5-free_dog
+Function_name =  void free_dog(dog_t *d);
 
 
 Header = dog.h
@@ -25,7 +25,7 @@ ReadMe = README.md
 
 
 all: $(OBJ)
-	$(CC)  $(CFLAGS)   $(OBJ) -o  $(NAME)
+	$(CC)  $(CFLAGS)  4-new_dog.c $(OBJ) -o  $(NAME)
 	betty    $(Main_file) $(Function_file) 
 	./$(NAME)
 	$(RM) -rf $(OBJ)
