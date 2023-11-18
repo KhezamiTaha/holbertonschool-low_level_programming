@@ -1,8 +1,8 @@
 
-Function_file =   dog.h
-Main_file =  dog_tmain.c
-NAME = dog_t
-Function_name =  void print_dog(struct dog *d);
+Function_file =   4-new_dog.c
+Main_file =  4-new_dogmain.c
+NAME = 4-new_dog
+Function_name =  dog_t *new_dog(char *name, float age, char *owner);
 
 
 Header = dog.h
@@ -15,7 +15,7 @@ Directory = structures_typedef
 
 CC = gcc
 Function_file_final =   '$(Function_file)' | tr -d '0123456789' | tr '-' '_' 
-SRC =    $(Main_file) 
+SRC =    $(Main_file) $(Function_file)
 OBJ = $(SRC:.c=.o)
 RM = rm
 git = git add * && git commit -m '$(NAME)' && git push
