@@ -1,6 +1,6 @@
 
 Function_file =   3-op_functions.c
-Main_file =  3-get_op_funcmain.c
+Main_file =  3-main.c
 NAME = func
 Function_name =  int int_index(int *array, int size, int (*cmp)(int));
 
