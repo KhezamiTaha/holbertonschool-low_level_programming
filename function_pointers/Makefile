@@ -1,8 +1,8 @@
 
-Function_file =   0-print_name.c
-Main_file =  0-print_namemain.c
-NAME = 0-print_name
-Function_name =  void print_name(char *name, void (*f)(char *));
+Function_file =   1-array_iterator.c
+Main_file =  1-array_iteratormain.c
+NAME = 1-array_iterator
+Function_name =  void array_iterator(int *array, size_t size, void (*action)(int));
 
 
 Header = function_pointers.h
