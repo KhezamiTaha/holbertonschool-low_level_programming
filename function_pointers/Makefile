@@ -1,11 +1,11 @@
 
-Function_file =   2-int_index.c
-Main_file =  2-int_indexmain.c
-NAME = 2-int_index
+Function_file =   3-op_functions.c
+Main_file =  3-get_op_funcmain.c
+NAME = func
 Function_name =  int int_index(int *array, int size, int (*cmp)(int));
 
 
-Header = function_pointers.h
+Header = 3-calc.h
 Directory = structures_typedef
 
 
@@ -15,7 +15,7 @@ Directory = structures_typedef
 
 CC = gcc
 Function_file_final =   '$(Function_file)' | tr -d '0123456789-.'  
-SRC =    $(Main_file) $(Function_file)
+SRC =    $(Main_file) $(Function_file)  3-get_op_func.c
 OBJ = $(SRC:.c=.o)
 RM = rm
 git = git add * && git commit -m '$(NAME)' && git push
@@ -27,7 +27,7 @@ ReadMe = README.md
 all: $(OBJ)
 	$(CC)  $(CFLAGS)   $(OBJ) -o  $(NAME)
 	betty    $(Main_file) $(Function_file) 
-	./$(NAME)
+	./$(NAME) 5 % 1
 	$(RM) -rf $(OBJ)
 	
 
