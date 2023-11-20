@@ -1,8 +1,8 @@
 
-Function_file =   1-array_iterator.c
-Main_file =  1-array_iteratormain.c
-NAME = 1-array_iterator
-Function_name =  void array_iterator(int *array, size_t size, void (*action)(int));
+Function_file =   2-int_index.c
+Main_file =  2-int_indexmain.c
+NAME = 2-int_index
+Function_name =  int int_index(int *array, int size, int (*cmp)(int));
 
 
 Header = function_pointers.h
@@ -14,7 +14,7 @@ Directory = structures_typedef
 
 
 CC = gcc
-Function_file_final =   '$(Function_file)' | tr -d '0123456789-'  
+Function_file_final =   '$(Function_file)' | tr -d '0123456789-.'  
 SRC =    $(Main_file) $(Function_file)
 OBJ = $(SRC:.c=.o)
 RM = rm
