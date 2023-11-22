@@ -7,8 +7,6 @@
 #include <ctype.h>
 #include <stdarg.h>
 
-
-
 /**
  *sum_them_all - Algorithms function
  *@n: pointer
@@ -26,4 +24,13 @@ int sum_them_all(const unsigned int n, ...);
  *Return: 1 or 0
  */
 void print_numbers(const char *separator, const unsigned int n, ...);
+
+/**
+ *print_strings - Algorithms function
+ *@separator: pointer
+ *@n: pointer
+ *
+ *Return: 1 or 0
+ */
+void print_strings(const char *separator, const unsigned int n, ...);
 #endif
