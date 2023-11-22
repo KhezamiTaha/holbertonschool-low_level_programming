@@ -1,8 +1,8 @@
 
-Function_file =   0-sum_them_all.c
-Main_file =  0-sum_them_allmain.c
-NAME = 0-sum_them_all
-Function_name =  int sum_them_all(const unsigned int n, ...);
+Function_file =   1-print_numbers.c
+Main_file =  1-print_numbersmain.c
+NAME = 1-print_numbers
+Function_name =  void print_numbers(const char *separator, const unsigned int n, ...);
 
 
 Header = variadic_functions.h

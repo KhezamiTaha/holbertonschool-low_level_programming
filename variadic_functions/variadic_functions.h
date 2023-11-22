@@ -17,4 +17,13 @@
  *Return: 1 or 0
  */
 int sum_them_all(const unsigned int n, ...);
+
+/**
+ *print_numbers - Algorithms function
+ *@n: pointer
+ *@separator: pointer
+ *
+ *Return: 1 or 0
+ */
+void print_numbers(const char *separator, const unsigned int n, ...);
 #endif
