@@ -7,9 +7,6 @@
 #include <ctype.h>
 #include <stdarg.h>
 
-/**
- *   variadic_functions
- */
 
 
 /**
