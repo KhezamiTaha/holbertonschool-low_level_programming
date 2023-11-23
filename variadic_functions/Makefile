@@ -1,8 +1,8 @@
 
-Function_file =   2-print_strings.c
-Main_file =  2-print_strings.cmain.c
-NAME = 2-print_strings
-Function_name =  void print_strings(const char *separator, const unsigned int n, ...);
+Function_file =   3-print_all.c
+Main_file =  3-print_allmain.c
+NAME = 3-print_all
+Function_name =  void print_all(const char * const format, ...);
 
 
 Header = variadic_functions.h
