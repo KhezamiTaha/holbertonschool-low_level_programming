@@ -28,27 +28,3 @@ void print_numbers(const char *separator, const unsigned int n, ...)
  * To-Do :  Variables Description
  *          Formt document
  */
-
-
-while (*(format + i))
-	{
-		j = 0;
-		printf("%c", *(format + i));
-		while (array[j].type)
-		{
-			if (strchr(format, *(array[j].type)))
-			{
-				fptr = array[j].f;
-				fptr(ptr);
-				j++;
-				break;
-			}
-		}
-		printf("%lu", strlen(format));
-		if (i < strlen(format))
-			printf(", ");
-		i++;
-	}
-	printf("\n");
-}
-
