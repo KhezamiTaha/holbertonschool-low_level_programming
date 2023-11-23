@@ -28,7 +28,7 @@ void print_all(const char *const format, ...)
 
 	i = 0;
 	va_start(printff, format);
-	while (format && (format + i))
+	while (format && *(format + i))
 	{
 		j = 0;
 		while (array[j].type)
