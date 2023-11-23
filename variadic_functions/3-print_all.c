@@ -24,6 +24,7 @@ void print_all(const char *const format, ...)
 	va_list printff;
 	va_list *ptr = &printff;
 	void (*fptr)(va_list *);
+	char *betzeen = "";
 
 	va_start(printff, format);
 	i = 0;
@@ -34,10 +35,10 @@ void print_all(const char *const format, ...)
 		{
 			if (*(format + i) == *(array[j].type))
 			{
+				printf("%s", betzeen);
 				fptr = array[j].f;
 				fptr(ptr);
-				if (i < strlen(format) - 1)
-					printf(", ");
+				betzeen = ", ";
 			}
 			j++;
 		}
