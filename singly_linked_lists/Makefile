@@ -1,8 +1,8 @@
 
-Function_file =   1-list_len.c
-Main_file =  1-list_lenmain.c
-NAME = 1-list_len
-Function_name =  size_t list_len(const list_t *h);
+Function_file =   2-add_node.c
+Main_file =  2-add_nodemain.c
+NAME = 2-add_node
+Function_name =  list_t *add_node(list_t **head, const char *str);
 
 
 Header = lists.h
@@ -25,7 +25,7 @@ ReadMe = README.md
 
 
 all: $(OBJ)
-	$(CC)  $(CFLAGS)   $(OBJ) -o  $(NAME)
+	$(CC)  $(CFLAGS)  0-print_list.c $(OBJ) -o  $(NAME)
 	betty    $(Main_file)  $(Header) $(Function_file)  
 	./$(NAME) 
 	$(RM) -rf $(OBJ) $(NAME)
