@@ -1,8 +1,8 @@
 
-Function_file =   0-print_list.c
-Main_file =  0-print_listmain.c
-NAME = 0-print_list
-Function_name =  size_t print_list(const list_t *h);
+Function_file =   1-list_len.c
+Main_file =  1-list_lenmain.c
+NAME = 1-list_len
+Function_name =  size_t list_len(const list_t *h);
 
 
 Header = lists.h
