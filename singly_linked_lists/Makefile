@@ -1,8 +1,8 @@
 
-Function_file =   3-add_node_end.c
-Main_file =  3-add_node_endmain.c
-NAME = 3-add_node_end
-Function_name =  list_t *add_node_end(list_t **head, const char *str);
+Function_file =   4-free_list.c
+Main_file =  4-free_list.cmain.c
+NAME = 4-free_list
+Function_name =  void free_list(list_t *head);
 
 
 Header = lists.h
@@ -25,9 +25,9 @@ ReadMe = README.md
 
 
 all: $(OBJ)
-	$(CC)  $(CFLAGS)  0-print_list.c $(OBJ) -o  $(NAME)
+	$(CC)  $(CFLAGS)  0-print_list.c  3-add_node_end.c $(OBJ) -o  $(NAME)
 	betty    $(Main_file)  $(Header) $(Function_file)  
-	./$(NAME) 
+	valgrind ./$(NAME) 
 	$(RM) -rf $(OBJ) $(NAME)
 	
 
