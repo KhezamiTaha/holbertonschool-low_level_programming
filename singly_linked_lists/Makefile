@@ -1,8 +1,8 @@
 
-Function_file =   2-add_node.c
-Main_file =  2-add_nodemain.c
-NAME = 2-add_node
-Function_name =  list_t *add_node(list_t **head, const char *str);
+Function_file =   3-add_node_end.c
+Main_file =  3-add_node_endmain.c
+NAME = 3-add_node_end
+Function_name =  list_t *add_node_end(list_t **head, const char *str);
 
 
 Header = lists.h
