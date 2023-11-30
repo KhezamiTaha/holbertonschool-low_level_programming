@@ -11,11 +11,12 @@ list_t *add_node(list_t **head, const char *str)
 {
 
 	list_t *temp = malloc(sizeof(list_t));
-	 if (temp == NULL)
-    {
-        printf("Error\n");
-        return (1);
-    }
+
+	if (temp == NULL)
+	{
+		printf("Error\n");
+		return (NULL);
+	}
 
 	temp->str = strdup(str);
 	temp->len = strlen(str);
@@ -23,7 +24,6 @@ list_t *add_node(list_t **head, const char *str)
 	*head = temp;
 	return (temp);
 }
-
 
 /**
  * To-Do :  Variables Description
