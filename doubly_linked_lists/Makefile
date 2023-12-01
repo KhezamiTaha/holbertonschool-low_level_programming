@@ -1,8 +1,8 @@
 
-Function_file =   3-add_dnodeint_end.c
-Main_file =  3-add_dnodeint_endmain.c
-NAME = 3-add_dnodeint_end
-Function_name =  dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
+Function_file =   4-free_dlistint.c
+Main_file =  4-free_dlistintmain.c
+NAME = 4-free_dlistint
+Function_name =  void free_dlistint(dlistint_t *head);
 
 
 Header = lists.h
@@ -25,7 +25,7 @@ ReadMe = README.md
 
 
 all: $(OBJ)
-	$(CC)  $(CFLAGS) 0-print_dlistint.c  $(OBJ) -o  $(NAME)
+	$(CC)  $(CFLAGS) 0-print_dlistint.c  3-add_dnodeint_end.c $(OBJ) -o  $(NAME)
 	betty    $(Main_file)  $(Header) $(Function_file)  
 	./$(NAME) 
 	$(RM) -rf $(OBJ) $(NAME)
