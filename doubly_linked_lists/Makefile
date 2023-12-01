@@ -1,8 +1,8 @@
 
-Function_file =   2-add_dnodeint.c
-Main_file =  2-add_dnodeintmain.c
-NAME = 2-add_dnodeint
-Function_name =  dlistint_t *add_dnodeint(dlistint_t **head, const int n);
+Function_file =   3-add_dnodeint_end.c
+Main_file =  3-add_dnodeint_endmain.c
+NAME = 3-add_dnodeint_end
+Function_name =  dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 
 
 Header = lists.h
