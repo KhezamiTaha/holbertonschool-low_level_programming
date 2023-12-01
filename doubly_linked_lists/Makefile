@@ -1,8 +1,8 @@
 
-Function_file =   1-dlistint_len.c
-Main_file =  1-dlistint_lenmain.c
-NAME = 1-dlistint_len
-Function_name =  size_t dlistint_len(const dlistint_t *h);
+Function_file =   2-add_dnodeint.c
+Main_file =  2-add_dnodeintmain.c
+NAME = 2-add_dnodeint
+Function_name =  dlistint_t *add_dnodeint(dlistint_t **head, const int n);
 
 
 Header = lists.h
@@ -25,7 +25,7 @@ ReadMe = README.md
 
 
 all: $(OBJ)
-	$(CC)  $(CFLAGS)  $(OBJ) -o  $(NAME)
+	$(CC)  $(CFLAGS) 0-print_dlistint.c  $(OBJ) -o  $(NAME)
 	betty    $(Main_file)  $(Header) $(Function_file)  
 	./$(NAME) 
 	$(RM) -rf $(OBJ) $(NAME)
