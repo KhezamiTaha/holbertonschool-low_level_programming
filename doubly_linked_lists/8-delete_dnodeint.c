@@ -1,27 +1,20 @@
 #include "lists.h"
-
 /**
  *delete_dnodeint_at_index - Algorithms  function
  *@head: pointer
  *@index: pointer
- *
  *Return: 1 or 0
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *ptr = *head;
-	dlistint_t *ptrleft, *ptrRight;
+	dlistint_t *ptr = *head, *ptrleft;
 	unsigned int i;
+
 	if (*head != NULL)
-	{
 		for (i = 0; ptr->next != NULL; i++)
-		{
 			ptr = ptr->next;
-		}
-	}
 	else
 		return (-1);
-
 	if (index == 0)
 	{
 		if (*head != NULL)
@@ -31,15 +24,12 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			(*head)->prev = NULL;
 			ptr = NULL;
 		}
-		return (1);
 	}
 	else if (index == i)
 	{
-		ptrleft = ptr->prev;
-		ptrleft->next = NULL;
+		ptr->prev->next = NULL;
 		free(ptr);
 		ptr = NULL;
-		return (1);
 	}
 	else
 	{
@@ -51,12 +41,10 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			ptr = ptr->next;
 		}
 		ptrleft = ptr->prev;
-		ptrRight = ptr->next;
-		ptrleft->next = ptrRight;
-		ptrRight->prev = ptrleft;
+		ptrleft->next = ptr->next;
+		ptr->next->prev = ptrleft;
 		free(ptr);
 		ptr = NULL;
-		return (1);
 	}
-	return (-1);
+	return (1);
 }
