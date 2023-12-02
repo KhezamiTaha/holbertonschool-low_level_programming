@@ -69,10 +69,11 @@ int main(void)
 	int r;
 	size_t n;
 
-	head = _create_dlist(3, 9, 6, 5);
+	head = _create_dlist(2, 9, 6);
 	r = delete_dnodeint_at_index(&head, 0);
 	printf("-> %d\n", r);
 	n = print_dlistint(head);
 	printf("-> %lu elements\n", n);
+	_free_dlistint(head);
 	return (0);
 }
