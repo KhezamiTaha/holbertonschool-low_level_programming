@@ -1,8 +1,8 @@
 
-Function_file =   6-sum_dlistint.c
-Main_file =  6-sum_dlistintmain.c
-NAME = 6-sum_dlistint
-Function_name =  int sum_dlistint(dlistint_t *head);
+Function_file =   5-get_dnodeint.c
+Main_file = 5-get_dnodeintmain.c
+NAME = 5-get_dnodeint
+Function_name =  dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
 
 
 Header = lists.h
