@@ -69,7 +69,7 @@ int main(void)
 	int r;
 	size_t n;
 
-	head = _create_dlist(2, 9, 6);
+	head = _create_dlist(3, 9, 6, 5);
 	r = delete_dnodeint_at_index(&head, 0);
 	printf("-> %d\n", r);
 	n = print_dlistint(head);

@@ -27,7 +27,7 @@ ReadMe = README.md
 all: $(OBJ)
 	$(CC)  $(CFLAGS) 0-print_dlistint.c  3-add_dnodeint_end.c 4-free_dlistint.c 2-add_dnodeint.c $(OBJ) -o  $(NAME)
 	betty    $(Main_file)  $(Header) $(Function_file)  
-	./$(NAME) 
+	valgrind ./$(NAME) 
 	$(RM) -rf $(OBJ) $(NAME)
 	
 
