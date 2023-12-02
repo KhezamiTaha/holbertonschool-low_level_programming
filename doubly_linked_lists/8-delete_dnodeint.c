@@ -50,7 +50,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		ptrRight = ptr->next;
 		ptrleft->next = ptrRight;
 		ptrRight->prev = ptrleft;
-		free(ptr);
 		return (1);
 	}
 	return (-1);
