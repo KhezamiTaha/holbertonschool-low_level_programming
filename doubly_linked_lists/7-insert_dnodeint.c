@@ -5,7 +5,7 @@
  *@h: pointer
  *@idx: pointer
  *@n: pointer
- * 
+ *
  *Return: 1 or 0
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
@@ -35,6 +35,9 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	temp->next = ptr;
 	temp->prev = ptr->prev;
 	ptr->prev = temp;
+	ptr = temp->prev;
+	ptr->next = temp;
+
 	return (temp);
 }
 

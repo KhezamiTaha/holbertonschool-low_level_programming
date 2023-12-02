@@ -1,7 +1,7 @@
 
-Function_file =   5-get_dnodeint.c
-Main_file = 5-get_dnodeintmain.c
-NAME = 5-get_dnodeint
+Function_file =   7-insert_dnodeint.c
+Main_file =  7-insert_dnodeintmain.c
+NAME = 7-insert_dnodeint
 Function_name =  dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
 
 
