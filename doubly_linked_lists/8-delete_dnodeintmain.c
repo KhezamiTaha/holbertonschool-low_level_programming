@@ -74,6 +74,5 @@ int main(void)
 	printf("-> %d\n", r);
 	n = print_dlistint(head);
 	printf("-> %lu elements\n", n);
-	_free_dlistint(head);
 	return (0);
 }
