@@ -1,8 +1,8 @@
 
-Function_file =   7-insert_dnodeint.c
-Main_file =  7-insert_dnodeintmain.c
-NAME = 7-insert_dnodeint
-Function_name =  dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
+Function_file =   8-delete_dnodeint.c
+Main_file =  8-delete_dnodeintmain.c
+NAME = 8-delete_dnodeint
+Function_name =  int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
 
 
 Header = lists.h
