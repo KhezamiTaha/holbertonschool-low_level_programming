@@ -16,6 +16,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	if (temp == NULL)
 	{
+		printf("error\n");
 		return (NULL);
 	}
 
@@ -29,6 +30,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		temp = add_dnodeint_end(h, n);
 	else
 	{
+		ptr = *h;
 		for (i = 0; i < idx; i++)
 		{
 			if (ptr == NULL)
