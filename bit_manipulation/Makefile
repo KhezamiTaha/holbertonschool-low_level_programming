@@ -1,8 +1,8 @@
 
-Function_file = 4-clear_bit.c
-Main_file =  4-clear_bitmain.c
-NAME = 4-clear_bit
-Function_name =  int clear_bit(unsigned long int *n, unsigned int index);
+Function_file = 5-flip_bits.c
+Main_file =  5-flip_bitsmain.c
+NAME = 5-flip_bits
+Function_name =  unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
 
 
