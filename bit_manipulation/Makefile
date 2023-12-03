@@ -1,8 +1,8 @@
 
-Function_file =   0-binary_to_uint.c
-Main_file =  0-binary_to_uintmain.c
-NAME = 0-binary_to_uint
-Function_name =  unsigned int binary_to_uint(const char *b);
+Function_file =   1-print_binary.c
+Main_file =  1-print_binarymain.c
+NAME = 1-print_binary
+Function_name =  void print_binary(unsigned long int n);
 
 
 Header = main.h
