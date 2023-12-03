@@ -13,6 +13,9 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned long int mask = 1UL << (sizeof(unsigned long int) * 8 - 1);
 	unsigned int i = 0, count = 0;
 
+	if ((n && m) == 0)
+		return (0);
+
 	while ((mask & n) == 0)
 	{
 		mask >>= 1;
@@ -38,7 +41,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	return (count);
 }
 
-	/**
-	 * To-Do :  Variables Description
-	 *          Formt document
-	 */
+/**
+ * To-Do :  Variables Description
+ *          Formt document
+ */
