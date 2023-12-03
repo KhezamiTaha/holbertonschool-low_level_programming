@@ -1,8 +1,8 @@
 
-Function_file =   1-print_binary.c
-Main_file =  1-print_binarymain.c
-NAME = 1-print_binary
-Function_name =  void print_binary(unsigned long int n);
+Function_file =   2-get_bit.c
+Main_file =  2-get_bitmain.c
+NAME = 2-get_bit
+Function_name =  int get_bit(unsigned long int n, unsigned int index);
 
 
 Header = main.h
