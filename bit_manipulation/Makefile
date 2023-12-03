@@ -1,8 +1,8 @@
 
-Function_file = 3-set_bit.c
-Main_file =  3-set_bitmain.c
-NAME = 3-set_bit
-Function_name =  int set_bit(unsigned long int *n, unsigned int index);
+Function_file = 4-clear_bit.c
+Main_file =  4-clear_bitmain.c
+NAME = 4-clear_bit
+Function_name =  int clear_bit(unsigned long int *n, unsigned int index);
 
 
 
