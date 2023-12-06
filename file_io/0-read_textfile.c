@@ -19,7 +19,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (STDOUT_FILENO == STDERR_FILENO)
 		write(2, buffer, n);
 	else
-		write(STDOUT_FILENO, buffer, n);
+		write(1, buffer, n);
 	close(filedescriptor);
 	return (n);
 }
