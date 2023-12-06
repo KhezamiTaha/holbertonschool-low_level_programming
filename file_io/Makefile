@@ -1,8 +1,8 @@
 
-Function_file = 1-create_file.c
-Main_file = 1-create_filemain.c
-NAME = 1-create_file
-Function_name =  int create_file(const char *filename, char *text_content);
+Function_file = 2-append_text_to_file.c
+Main_file = 2-append_text_to_filemain.c
+NAME = 2-append_text_to_file
+Function_name =  int append_text_to_file(const char *filename, char *text_content);
 
 
 
