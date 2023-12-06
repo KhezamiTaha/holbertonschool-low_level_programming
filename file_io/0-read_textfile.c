@@ -16,7 +16,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	n = read(filedescriptor, buffer, letters);
 	if (n == -1)
 		return (0);
-	write(STDOUT_FILENO, buffer, n);
+	if (STDOUT_FILENO == STDERR_FILENO)
+		write(2, buffer, n);
+	else
+		write(STDOUT_FILENO, buffer, n);
 	close(filedescriptor);
 	return (n);
 }
