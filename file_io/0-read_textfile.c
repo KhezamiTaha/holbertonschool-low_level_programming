@@ -10,7 +10,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int filedescriptor, n;
-	char buffer[7000];
+	char buffer[700];
 
 	filedescriptor = open(filename, O_RDONLY);
 	n = read(filedescriptor, buffer, letters);
