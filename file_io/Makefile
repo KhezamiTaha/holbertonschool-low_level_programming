@@ -1,6 +1,6 @@
 
 Function_file = 0-read_textfile.c
-Main_file =  0-read_textfilemain.c
+Main_file = main_0.c
 NAME = 0-read_textfile
 Function_name =  ssize_t read_textfile(const char *filename, size_t letters);
 
@@ -28,7 +28,7 @@ ReadMe = README.md
 all: $(OBJ)
 	$(CC)  $(CFLAGS)  $(OBJ) -o  $(NAME)
 	betty    $(Main_file)  $(Header) $(Function_file)  
-	./$(NAME) text.txt
+	./$(NAME) text.txt 2000
 	$(RM) -rf $(OBJ) $(NAME)
 	
 
