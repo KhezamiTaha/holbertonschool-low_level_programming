@@ -1,7 +1,7 @@
 
-Function_file = 2-append_text_to_file.c
+Function_file = 3-cp.c
 Main_file = 2-append_text_to_filemain.c
-NAME = 2-append_text_to_file
+NAME = 3-cp
 Function_name =  int append_text_to_file(const char *filename, char *text_content);
 
 
@@ -16,7 +16,7 @@ Directory = singly_linked_lists
 
 CC = gcc
 Function_file_final =   '$(Function_file)' | tr -d '0123456789-'  
-SRC =    $(Main_file) $(Function_file)  
+SRC =    $(Function_file)  
 OBJ = $(SRC:.c=.o)
 RM = rm
 git = git add * && git commit -m '$(NAME)' && git push
@@ -27,8 +27,8 @@ ReadMe = README.md
 
 all: $(OBJ)
 	$(CC)  $(CFLAGS)  $(OBJ) -o  $(NAME)
-	betty    $(Main_file)  $(Header) $(Function_file)  
-	./$(NAME) samir 2000
+	betty     $(Header) $(Function_file)  
+	./$(NAME) text text_2
 	$(RM) -rf $(OBJ) $(NAME)
 	
 
