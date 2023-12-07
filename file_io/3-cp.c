@@ -14,7 +14,7 @@ int main(int ac, char **av)
 
 	if (ac != 3)
 	{
-		dprintf(2, "Usage: cp %s %s\n", av[1], av[2]);
+		dprintf(2, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
