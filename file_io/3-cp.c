@@ -28,7 +28,7 @@ int main(int ac, char **av)
 	fd_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_to == -1)
 	{
-		dprintf(2, "Error: Can't write to %s", av[2]);
+		dprintf(2, "Error: Can't write to %s\n", av[2]);
 		exit(99);
 	}
 
