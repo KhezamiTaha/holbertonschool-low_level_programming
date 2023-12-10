@@ -27,7 +27,7 @@ ReadMe = README.md
 all: $(OBJ)
 	$(CC)  $(CFLAGS)    $(OBJ) -o  $(NAME)
 	betty    $(Main_file)  $(Header) $(Function_file)  
-	./$(NAME) 
+	valgrind ./$(NAME) 
 	$(RM) -rf $(OBJ) $(NAME)
 	
 
