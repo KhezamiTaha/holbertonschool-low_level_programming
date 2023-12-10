@@ -13,6 +13,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int index = hash_djb2((const unsigned char *)key) % ht->size;
 	hash_node_t *temp;
 
+	if (ht == NULL || !strcmp(key, ""))
+		return (0);
 	if (ht->array[index] == NULL)
 	{
 		ht->array[index] = malloc(sizeof(hash_node_t));
