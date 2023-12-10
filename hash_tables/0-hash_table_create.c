@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- *hash_table_create - Algorithms function
+ *hash_table_create -  Algorithms function
  *@size: pointer
  *@: pointer
  *
