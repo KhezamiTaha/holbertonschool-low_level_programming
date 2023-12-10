@@ -27,7 +27,7 @@ ReadMe = README.md
 all: $(OBJ)
 	$(CC)  $(CFLAGS) 1-djb2.c 0-hash_table_create.c  $(OBJ) -o  $(NAME)
 	betty    $(Main_file)  $(Header) $(Function_file)  
-	valgrind ./$(NAME) 
+	./$(NAME) 
 	$(RM) -rf $(OBJ) $(NAME)
 	
 
