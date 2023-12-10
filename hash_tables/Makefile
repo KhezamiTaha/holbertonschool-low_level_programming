@@ -1,8 +1,8 @@
 
-Function_file =   5-hash_table_print.c
-Main_file =  5-hash_table_printmain.c
-NAME = 5-hash_table_print
-Function_name =  void hash_table_print(const hash_table_t *ht);
+Function_file =   6-hash_table_delete.c
+Main_file =  6-hash_table_deletemain.c
+NAME = 6-hash_table_delete
+Function_name =  void hash_table_delete(hash_table_t *ht);
 
 
 Header = hash_tables.h
@@ -27,7 +27,7 @@ ReadMe = README.md
 all: $(OBJ)
 	$(CC)  $(CFLAGS) 1-djb2.c 0-hash_table_create.c 3-hash_table_set.c  $(OBJ) -o  $(NAME)
 	betty    $(Main_file)  $(Header) $(Function_file)  
-	./$(NAME) 
+	valgrind ./$(NAME) 
 	$(RM) -rf $(OBJ) $(NAME)
 	
 
