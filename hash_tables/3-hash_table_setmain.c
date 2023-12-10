@@ -37,7 +37,7 @@ int main(void)
 	int ret;
 
 	ht = hash_table_create(30);
-	ret = hash_table_set(ht, "USA", "Washington");
+	ret = hash_table_set(NULL, "USA", "Washington");
 	printf("%d\n", ret);
 	ret = hash_table_set(ht, "France", "Paris");
 	printf("%d\n", ret);
