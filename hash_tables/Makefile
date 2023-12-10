@@ -1,8 +1,8 @@
 
-Function_file =   2-key_index.c
-Main_file =  2-key_indexmain.c
-NAME = 2-key_index
-Function_name =  unsigned long int key_index(const unsigned char *key, unsigned long int size);
+Function_file =   3-hash_table_set.c
+Main_file =  3-hash_table_setmain.c
+NAME = 3-hash_table_set
+Function_name =  int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 
 
 Header = hash_tables.h
@@ -25,7 +25,7 @@ ReadMe = README.md
 
 
 all: $(OBJ)
-	$(CC)  $(CFLAGS) 1-djb2.c   $(OBJ) -o  $(NAME)
+	$(CC)  $(CFLAGS) 1-djb2.c 0-hash_table_create.c  $(OBJ) -o  $(NAME)
 	betty    $(Main_file)  $(Header) $(Function_file)  
 	valgrind ./$(NAME) 
 	$(RM) -rf $(OBJ) $(NAME)
