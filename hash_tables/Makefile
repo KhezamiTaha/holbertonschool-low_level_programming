@@ -1,8 +1,8 @@
 
-Function_file =   3-hash_table_set.c
-Main_file =  3-hash_table_setmain.c
-NAME = 3-hash_table_set
-Function_name =  int hash_table_set(hash_table_t *ht, const char *key, const char *value);
+Function_file =   4-hash_table_get.c
+Main_file =  4-hash_table_getmain.c
+NAME = 4-hash_table_get
+Function_name =  char *hash_table_get(const hash_table_t *ht, const char *key);
 
 
 Header = hash_tables.h
@@ -25,7 +25,7 @@ ReadMe = README.md
 
 
 all: $(OBJ)
-	$(CC)  $(CFLAGS) 1-djb2.c 0-hash_table_create.c  $(OBJ) -o  $(NAME)
+	$(CC)  $(CFLAGS) 1-djb2.c 0-hash_table_create.c 3-hash_table_set.c  $(OBJ) -o  $(NAME)
 	betty    $(Main_file)  $(Header) $(Function_file)  
 	./$(NAME) 
 	$(RM) -rf $(OBJ) $(NAME)
