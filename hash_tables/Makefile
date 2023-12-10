@@ -1,8 +1,8 @@
 
-Function_file =   0-hash_table_create.c
-Main_file =  0-hash_table_createmain.c
-NAME = 0-hash_table_create
-Function_name =  hash_table_t *hash_table_create(unsigned long int size);
+Function_file =   1-djb2.c
+Main_file =  1-djb2main.c
+NAME = 1-djb2
+Function_name =  unsigned long int hash_djb2(const unsigned char *str);
 
 
 Header = hash_tables.h
