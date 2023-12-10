@@ -28,6 +28,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (!strcmp(ht->array[index]->key, key))
 		{
+			temp = ht->array[index];
+			free(temp);
 			ht->array[index] = malloc(sizeof(hash_node_t));
 			if (ht->array[index] == NULL)
 				return (0);
