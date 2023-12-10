@@ -2,6 +2,33 @@
 #include <string.h>
 #include <stdio.h>
 #include "hash_tables.h"
+/**
+ * _hash_table_print - check the code
+ * @ht: string used to generate hash value
+ * Return: Always EXIT_SUCCESS.
+ */
+void _hash_table_print(const hash_table_t *ht)
+{
+	unsigned long int i;
+	hash_node_t *p;
+	char n;
+
+	for (i = 0; ht && i < ht->size; i++)
+	{
+		p = ht->array[i];
+		printf("[%lu]", i);
+		n = 0;
+		while (p)
+		{
+			if (n)
+				printf(", ");
+			printf("'%s': '%s'", p->key, p->value);
+			p = p->next;
+			n = 1;
+		}
+		printf("\n");
+	}
+}
 
 /**
  * main - check the code
@@ -13,7 +40,7 @@ int main(void)
 	hash_table_t *ht;
 	char *value;
 
-	ht = hash_table_create(1024);
+	ht = hash_table_create(30);
 	hash_table_set(ht, "c", "fun");
 	hash_table_set(ht, "python", "awesome");
 	hash_table_set(ht, "Bob", "and Kris love asm");
@@ -39,5 +66,6 @@ int main(void)
 	printf("%s:%s\n", "c", value);
 	value = hash_table_get(ht, "javascript");
 	printf("%s:%s\n", "javascript", value);
+	_hash_table_print(ht);
 	return (EXIT_SUCCESS);
 }

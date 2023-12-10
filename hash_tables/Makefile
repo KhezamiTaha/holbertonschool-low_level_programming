@@ -1,8 +1,8 @@
 
-Function_file =   4-hash_table_get.c
-Main_file =  4-hash_table_getmain.c
-NAME = 4-hash_table_get
-Function_name =  char *hash_table_get(const hash_table_t *ht, const char *key);
+Function_file =   5-hash_table_print.c
+Main_file =  5-hash_table_printmain.c
+NAME = 5-hash_table_print
+Function_name =  void hash_table_print(const hash_table_t *ht);
 
 
 Header = hash_tables.h
